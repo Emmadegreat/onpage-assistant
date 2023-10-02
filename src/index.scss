@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-.app{
-  padding: 6rem 4rem;
-  background: rgb(63, 61, 61);
-}
 .object {
   width: 50px;
   height: 50px;
@@ -21,9 +17,7 @@
 }
 
 .control{
-
-}
-.btns-cont{
+  .btns-cont{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -52,4 +46,6 @@
   & :nth-child(4){
     background: rgb(53, 51, 177);
   }
+}
+
 }

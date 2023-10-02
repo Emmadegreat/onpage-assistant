@@ -5,11 +5,6 @@
   box-sizing: border-box;
 }
 
-.app {
-  padding: 6rem 4rem;
-  background: rgb(63, 61, 61);
-}
-
 .object {
   width: 50px;
   height: 50px;
@@ -21,12 +16,12 @@
   transform: translateX(200px); /* Adjust the distance as needed */
 }
 
-.btns-cont {
+.control .btns-cont {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.btns-cont button {
+.control .btns-cont button {
   width: 120px;
   height: 50px;
   border-radius: 0.5rem;
@@ -34,15 +29,15 @@
   font-size: 1rem;
   cursor: pointer;
 }
-.btns-cont :nth-child(1) {
+.control .btns-cont :nth-child(1) {
   background: rgb(209, 105, 105);
 }
-.btns-cont :nth-child(2) {
+.control .btns-cont :nth-child(2) {
   background: rgb(65, 182, 87);
 }
-.btns-cont :nth-child(3) {
+.control .btns-cont :nth-child(3) {
   background: rgb(195, 169, 41);
 }
-.btns-cont :nth-child(4) {
+.control .btns-cont :nth-child(4) {
   background: rgb(53, 51, 177);
 }/*# sourceMappingURL=index.css.map */
