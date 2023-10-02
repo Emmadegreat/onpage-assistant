@@ -1,23 +1,26 @@
 import '../index.css'
 
-import React, {useState} from 'react';
+import React, {useRef} from 'react';
 
-const Assistant = () => {
+import { useFrame } from 'react-three-fiber';
 
-    const [animate, setAnimate] = useState(false);
+const Assistant = ({position}) => {
+    const mesh = useRef();
 
-    const handleButtonClick = () => {
-        setAnimate(true);
+    useFrame(() => {
+        if (mesh.current) {
+            mesh.current.rotation.x += 0.01;
+            mesh.current.rotation.y += 0.01;
+        }
+    });
 
-        setTimeout(() => {
-            setAnimate(false);
-        }, 1000);
-    };
 
     return (
         <>
-             <button onClick={handleButtonClick}>Move Object</button>
-            <div className={`object ${animate ? 'animate' : ''}`}></div>
+            <mesh position={position} ref={mesh}>
+                <boxGeometry args={[1, 2, 0.5]} />
+                <meshStandardMaterial color="blue" />
+            </mesh>
         </>
     );
 }

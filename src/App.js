@@ -2,13 +2,13 @@ import './index.css'
 
 import React, { useState } from 'react';
 
-import Assistant from './components/assistant';
+import Scene from './components/scene';
 
 function App() {
 
   return (
     <div className='app'>
-     <Assistant/>
+     <Scene/>
 
     </div>
   );
