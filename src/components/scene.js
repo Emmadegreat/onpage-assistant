@@ -19,13 +19,13 @@ const Scene = () => {
 
     return (
         <>
-            <div className='control' style={{ backgroundColor: bgColor, height: '70vh' }}>
+            <div className='control' style={{ backgroundColor: bgColor, height: '100vh' }}>
                 <Canvas>
                     <ambientLight />
                     <pointLight position={[10, 10, 10]} />
                     <Assistant position={position} />
                 </Canvas>
-                <div className='btns-cont'>
+                <div className='btns-cont' style={{ backgroundColor: bgColor }}>
                     <button onClick={() => handleMove(-10, 0, 0, "rgb(209, 105, 105)")}> Left</button>
                     <button onClick={() => handleMove(10, 0, 0, "rgb(65, 182, 87)")}> Right </button>
                     <button onClick={() => handleMove(0, 3, 0, "rgb(236, 207, 63)")}> Up </button>
