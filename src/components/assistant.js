@@ -1,13 +1,25 @@
-import React from 'react';
+import '../index.css'
 
-function Assistant({ position, explanation }) {
-  return (
-    <mesh position={position}>
-      <boxGeometry args={[0.5, 0.5, 0.1]} />
-      <meshBasicMaterial color="red" />
-      <textMesh position={[0, 0, 0.1]}>{explanation}</textMesh>
-    </mesh>
-  );
+import React, {useState} from 'react';
+
+const Assistant = () => {
+
+    const [animate, setAnimate] = useState(false);
+
+    const handleButtonClick = () => {
+        setAnimate(true);
+
+        setTimeout(() => {
+            setAnimate(false);
+        }, 1000);
+    };
+
+    return (
+        <>
+             <button onClick={handleButtonClick}>Move Object</button>
+            <div className={`object ${animate ? 'animate' : ''}`}></div>
+        </>
+    );
 }
 
 export default Assistant;
