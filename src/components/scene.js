@@ -15,8 +15,6 @@ const Scene = () => {
         setBgColor(color);
     };
 
-
-
     return (
         <>
             <div className='control' style={{ backgroundColor: bgColor, height: '100vh' }}>
@@ -26,10 +24,10 @@ const Scene = () => {
                     <Assistant position={position} />
                 </Canvas>
                 <div className='btns-cont' style={{ backgroundColor: bgColor }}>
-                    <button onClick={() => handleMove(-10, 0, 0, "rgb(209, 105, 105)")}> Left</button>
-                    <button onClick={() => handleMove(10, 0, 0, "rgb(65, 182, 87)")}> Right </button>
-                    <button onClick={() => handleMove(0, 3, 0, "rgb(236, 207, 63)")}> Up </button>
-                    <button onClick={()=>handleMove(0, -3, 0, "rgb(56, 53, 225)")}> Down</button>
+                    <button onClick={() => handleMove(-8, 0, 0, "rgb(209, 105, 105)")}> Left</button>
+                    <button onClick={() => handleMove(8, 0, 0, "rgb(65, 182, 87)")}> Right </button>
+                    <button onClick={() => handleMove(0, 2.6, 0, "rgb(236, 207, 63)")}> Up </button>
+                    <button onClick={()=>handleMove(0, -2.6, 0, "rgb(56, 53, 225)")}> Down</button>
                 </div>
 
             </div>
