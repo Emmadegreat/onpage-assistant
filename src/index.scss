@@ -18,34 +18,34 @@
 
 .control{
   .btns-cont{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-  & button{
-    width: 120px;
-    height: 50px;
-    border-radius: 0.5rem;
-    border-width: 0rem;
-    font-size: 1rem;
-    cursor: pointer;
-  }
+    & button{
+      width: 120px;
+      height: 50px;
+      border-radius: 0.5rem;
+      border-width: 0rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
 
-  & :nth-child(1){
-    background: rgb(209, 105, 105);
-  }
+    & :nth-child(1){
+      background: rgb(209, 105, 105);
+    }
 
-  & :nth-child(2){
-    background: rgb(65, 182, 87);
-  }
+    & :nth-child(2){
+      background: rgb(65, 182, 87);
+    }
 
-  & :nth-child(3){
-    background: rgb(195, 169, 41);
-  }
+    & :nth-child(3){
+      background: rgb(236, 207, 63);
+    }
 
-  & :nth-child(4){
-    background: rgb(53, 51, 177);
+    & :nth-child(4){
+      background: rgb(56, 53, 225);
+    }
   }
-}
 
 }

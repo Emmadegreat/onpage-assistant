@@ -8,7 +8,7 @@ import { Canvas } from 'react-three-fiber';
 const Scene = () => {
 
     const [position, setPosition] = useState([0, 0, 0]);
-    const [bgColor, setBgColor] = useState("rgb(63, 61, 61)")
+    const [bgColor, setBgColor] = useState("#fff")
 
     const handleMove = (x, y, z,color) => {
         setPosition([x, y, z]);
@@ -26,10 +26,10 @@ const Scene = () => {
                     <Assistant position={position} />
                 </Canvas>
                 <div className='btns-cont'>
-                    <button onClick={() => handleMove(-2, 0, 0, "red")}>Move Left (Red)</button>
-                    <button onClick={() => handleMove(2, 0, 0, "blue")}>Move Right (Blue)</button>
-                    <button onClick={() => handleMove(0, 2, 0, "green")}>Move Up (Green)</button>
-                    <button onClick={()=>handleMove(2, 0, 2, "white")}>Move Down</button>
+                    <button onClick={() => handleMove(-10, 0, 0, "rgb(209, 105, 105)")}> Left</button>
+                    <button onClick={() => handleMove(10, 0, 0, "rgb(65, 182, 87)")}> Right </button>
+                    <button onClick={() => handleMove(0, 3, 0, "rgb(236, 207, 63)")}> Up </button>
+                    <button onClick={()=>handleMove(0, -3, 0, "rgb(56, 53, 225)")}> Down</button>
                 </div>
 
             </div>
